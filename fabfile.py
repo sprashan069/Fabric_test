@@ -30,6 +30,6 @@ def push():
     local("git push -u origin master")
 
 def prepare_deploy():
-    # test()
+    test()
     commit()
     push()
