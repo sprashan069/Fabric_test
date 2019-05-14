@@ -24,12 +24,12 @@ def commit():
     local("git add -A")
     # local("git commit")
     local('git commit -a -m  "first commit" ', capture=False)
-    local("git remote add origin https://github.com/sprashan069/demo.git ")
+    local("git remote add origin https://github.com/sprashan069/Fabric_test.git ")
 
 def push():
     local("git push -u origin master")
 
 def prepare_deploy():
-    test()
+    # test()
     commit()
     push()
